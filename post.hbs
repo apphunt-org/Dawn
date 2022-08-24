@@ -4,7 +4,7 @@
     <main class="site-main">
         {{#post}}
             {{> content width="wide"}}
-            {{comments}}
+            {{> comments width="wide"}}
         {{/post}}
         {{#is "post"}}
             {{#if @custom.show_related_posts}}
