@@ -4,7 +4,9 @@
     <main class="site-main">
         {{#post}}
             {{> content width="wide"}}
-            {{comments width="wide"}}
+            <div style="padding: 24px;">
+                {{comments}}
+            </div>
         {{/post}}
         {{#is "post"}}
             {{#if @custom.show_related_posts}}
